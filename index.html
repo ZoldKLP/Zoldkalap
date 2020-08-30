@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zöldkalap</title>
+    <link rel="stylesheet" href="/lib/bootstrap-4.5.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <style>
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+        }
+
+        .bg {
+            /* The image used */
+            background-image: url("/img/logo2.jpg");
+
+            /* Full height */
+            height: 100%;
+
+            /* Center and scale the image nicely 
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"> */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+    <!--<style>
+    .bottom-left {
+      position: absolute;
+      bottom: 8px;
+      left: 16px;
+    }
+    
+    .top-left {
+      position: absolute;
+      top: 8px;
+      left: 16px;
+    }
+    
+    .top-right {
+      position: absolute;
+      top: 180px;
+      right: 100px;
+      color: rgb(200, 221, 165);
+      font-size: 70px;
+      text-shadow: 1px 1px 2px rgba(200, 221, 165, 0.5);
+      transform: rotate(-10deg);
+    }
+    
+    .bottom-right {
+      position: absolute;
+      bottom: 8px;
+      right: 16px;
+    }
+    
+    .centered {
+      position: absolute;
+      top: 25%;
+      left: 75%;
+      transform: translate(-50%, -50%);
+      color: rgb(200, 221, 165);
+      font-size: xx-large;
+    }
+    </style>
+-->
+
+</head>
+
+<body>
+
+    <script>
+        jQuery('body').css('display', 'none');
+        jQuery(document).ready(function () {
+            jQuery('body').fadeIn(1700);
+        });
+        setTimeout(function () {
+            jQuery('body').fadeIn();
+        }, 5000)
+    </script>
+
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html" style="font-weight: bold;">
+            <img src="/img/kalap.jpg" alt="Hat">
+            Zöldkalap
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="#navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+                    <a class="nav-link" href="#Áraink" style="font-weight: bolder;">Termékeink/Áraink</a>
+                </li>
+                <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+                    <a class="nav-link" href="#Elérhetőségeink/Helyszín"
+                        style="font-weight: bolder;">Elérhetőségeink/Helyszín/Nyitvatartás</a>
+                </li>
+                <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+                    <a class="nav-link" href="#Galéria" style="font-weight: bolder;">Galéria</a>
+                </li>
+                <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+                    <a class="nav-link" href="#Ajándékok" style="font-weight: bolder;">Ajándékok</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+    <div class="bg"></div>
+
+
+    <!-- <div class="container">
+        <div class="bottom-left"></div>
+        <div class="top-left"></div>
+        <div class="top-right"></div>
+        <div class="bottom-right"></div>
+        <div class="centered"></div>
+    </div>-->
+    <div id="containerAr">
+        <h1 id="Áraink">Termékeink/Áraink</h1>
+
+        <table>
+            <tr>
+                <td>Kajak</td>
+                <td>30 lej / fő</td>
+            </tr>
+            <tr>
+                <td>Kenu</td>
+                <td>25 lej / fő</td>
+            </tr>
+            <tr>
+                <td>Csónak</td>
+                <td>120 lej / nap</td>
+            </tr>
+            <tr>
+                <td>Felfújhatós szörf bigyusz</td>
+                <td>30 lej / fő</td>
+            </tr>
+        </table>
+
+        <h1 id="Elérhetőségeink/Helyszín">Elérhetőségeink/Helyszín/Nyitvatartás</h1>
+
+
+        <h3>Ha bármilyen kérdésed van nyugodtan keress minket a 0753772924 - es telefonszámon vagy a ::::::::::: e-mail
+            címen!</h3>
+        <h3>Megtalálsz minket itt:</h3>
+
+        <a target="blank" href="https://goo.gl/maps/cqMkc2nqvvEwzcBWA">
+            <img src="/img/map.jpg" alt="Zöldkalap-Location">
+        </a>
+
+        <table>
+            <caption style="caption-side:top; text-align:center;">Nyitvatartás</caption>
+            <thead>
+                <tr>
+                    <th style="padding-bottom: 15px; text-align: center;">Nap</th>
+                    <th style="padding-bottom: 15px; text-align: center;">Nyitás</th>
+                    <th style="padding-bottom: 15px; text-align: center;">Zárás</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Hétfő - Péntek</td>
+                    <td>12:00</td>
+                    <td>20:00</td>
+                </tr>
+                <tr>
+                    <td>Szombat</td>
+                    <td>12:00</td>
+                    <td>20:00</td>
+                </tr>
+                <tr>
+                    <td>Vasárnap</td>
+                    <td>12:00</td>
+                    <td>20:00</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h1 id="Galéria">Galéria</h1>
+
+        <h1 id="Ajándékok">Ajándékok</h1>
+
+    </div>
+</body>
+
+</html>
