@@ -16,6 +16,12 @@
 
 <body>
 
+<script>history.scrollRestoration = "manual";
+
+    $(window).on('beforeunload', function(){
+          $(window).Top(0);
+    });</script>
+
     <script>
         jQuery('body').css('display', 'none');
         jQuery(document).ready(function () {
@@ -55,8 +61,8 @@
         </div>
     </nav>
     <div class="bg"></div>
-    
-    
+
+
 
 
     <!-- <div class="container">
@@ -132,6 +138,9 @@
         <h1 id="Ajándékok">Ajándékok</h1>
 
     </div>
+    <script>window.onbeforunload = function () {
+            window.scrollTo(0, 0);
+        };</script>
 </body>
 
 </html>
