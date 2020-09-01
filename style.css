@@ -27,6 +27,22 @@ html {
     width: 100%;
 }
 
+.card {
+  font-family: sans-serif;
+  background: rgb(99, 188, 80);
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+  text-align: center;
+}
+
+.card:hover {
+  transform: scale(1.15);
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+}
+.card {
+  transition: 0.5s ease;
+  margin:30px;
+}
+
 h1::before { 
     display: block; 
     content: " "; 

@@ -16,19 +16,19 @@
 
 <body>
 
-<script>
-$(function() {
-  $(document).click(function (event) {
-    $('.navbar-collapse').collapse('hide');
-  });
-});
-</script>
+    <script>
+        $(function () {
+            $(document).click(function (event) {
+                $('.navbar-collapse').collapse('hide');
+            });
+        });
+    </script>
 
-<script>history.scrollRestoration = "manual";
+    <script>history.scrollRestoration = "manual";
 
-    $(window).on('beforeunload', function(){
-          $(window).Top(0);
-    });</script>
+        $(window).on('beforeunload', function () {
+            $(window).Top(0);
+        });</script>
 
     <script>
         jQuery('body').css('display', 'none');
@@ -80,10 +80,19 @@ $(function() {
         <div class="bottom-right"></div>
         <div class="centered"></div>
     </div>-->
-    <div id="containerAr">
-        <h1 id="Áraink">Termékeink/Áraink</h1>
 
-        <table>
+    <h1 id="Áraink">Termékeink/Áraink</h1>
+
+    <div class="card" style="width: 30rem;">
+        <img src="./img/duplaKajak.jpg" class="card-img-top" alt="backgroundGreen">
+        <div class="card-body">
+            <h5 class="card-title">Két személyes kajak</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+            <a href="#Galéria" class="btn btn-primary">Galéria</a>
+        </div>
+
+        <!--        <table>
             <tr>
                 <td>Kajak</td>
                 <td>30 lej / fő</td>
@@ -100,8 +109,10 @@ $(function() {
                 <td>Felfújhatós szörf bigyusz</td>
                 <td>30 lej / fő</td>
             </tr>
-        </table>
+        </table>    -->
+    </div>
 
+    <div>
         <h1 id="Elérhetőségeink/Helyszín">Elérhetőségeink/Helyszín/Nyitvatartás</h1>
 
 
