@@ -32,15 +32,13 @@ html {
   background: rgb(99, 188, 80);
   box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
   text-align: center;
+  transition: 0.5s ease;
+  margin:30px;
 }
 
 .card:hover {
-  transform: scale(1.15);
+  transform: scale(1.05);
   box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
-}
-.card {
-  transition: 0.5s ease;
-  margin:30px;
 }
 
 h1::before { 
