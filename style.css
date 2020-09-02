@@ -35,7 +35,7 @@ html {
   box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
   text-align: center;
   transition: 0.5s ease;
-  margin: 30px;
+  margin: 25px 75px 25px 75px;
   display: inline-block;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
@@ -52,7 +52,7 @@ html {
   box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
   text-align: center;
   transition: 0.5s ease;
-  margin: 100px;
+  margin: 25px 75px 25px 75px;
   display:flex; 
   justify-content:center; 
   align-items:center;
@@ -105,7 +105,7 @@ h1::before {
     .top-right {
       position: absolute;
       top: 180px;
-      right: 100px;
+      right: 75px;
       color: rgb(200, 221, 165);
       font-size: 70px;
       text-shadow: 1px 1px 2px rgba(200, 221, 165, 0.5);
