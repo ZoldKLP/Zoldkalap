@@ -35,14 +35,14 @@ html {
   box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
   text-align: center;
   transition: 0.5s ease;
-  margin: 25px 75px 25px 75px;
+  margin: 30px 75px 30px 75px;
   display: inline-block;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
 }
 
 .card:hover {
-  transform: scale(1.25);
+  transform: scale(1.15);
   box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
 }
 
@@ -52,7 +52,7 @@ html {
   box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
   text-align: center;
   transition: 0.5s ease;
-  margin: 25px 75px 25px 75px;
+  margin: 30px 75px 30px 75px;
   display:flex; 
   justify-content:center; 
   align-items:center;
@@ -62,7 +62,7 @@ html {
 }
 
 .card2:hover {
-  transform: scale(1.25);
+  transform: scale(1.15);
   box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
 }
 
