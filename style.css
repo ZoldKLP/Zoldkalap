@@ -10,7 +10,7 @@ html {
 
 .bg {
     /* The image used */
-    background-image: url("./img/logo2.jpg");
+    background-image: url("./img/logo2WidthCenter.png");
 
     /* Full height */
     height: 100%;
@@ -78,6 +78,10 @@ html {
 .cardGift:hover{
   transform: scale(1.05);
   box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+}
+
+h1{
+  text-align: center;
 }
 
 h1::before { 
