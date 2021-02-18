@@ -5,13 +5,14 @@ html{
 body,
 html {
     height: 100%;
+    width: 100%;
     margin: 0;
     box-sizing: border-box;
 }
 
 .bg {
     /* The image used */
-    background-image: url("./img/logo2WidthCenter.png");
+    background-image: url("./img/logo2WidthCenter2MINI.png");
 
     /* Full height */
     height: 100%;
@@ -30,50 +31,16 @@ html {
     z-index:99
 }
 
-.card {
-  font-family: sans-serif;
-  background: rgb(99, 188, 80);
-  box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
-  text-align: center;
-  transition: 0.5s ease;
-  margin: 30px 75px 30px 75px;
-  display: inline-block;
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-}
-
-.card:hover {
-  transform: scale(1.15);
-  box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
-}
-
-.card2{
-  font-family: sans-serif;
-  background: rgb(99, 188, 80);
-  box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
-  text-align: center;
-  transition: 0.5s ease;
-  margin: 30px 75px 30px 75px;
-  display:flex; 
-  justify-content:center; 
-  align-items:center;
-  display: inline-block;
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-}
-
-.card2:hover {
-  transform: scale(1.15);
-  box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
-}
-
 .cardGift{
   font-family: sans-serif;
   background: rgb(99, 188, 80);
   box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
   text-align: center;
   transition: 0.5s ease;
-  margin:70px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 100px;
+  margin-right: 100px;
   justify-content:center; 
   align-items:center;
   display: inline-block;
@@ -109,7 +76,7 @@ table.center {
   table {
     border-collapse: collapse;
     border-spacing: 0;
-    width: 50%;
+    width: 88%;
     border: 1px solid #ddd;
     margin-bottom: 50px;
   }

@@ -7,8 +7,13 @@ body {
     background: url("./img/logo2.jpg");
     overflow: hidden;
 }
-
-.card {
+.flip-card{
+  background-color: transparent;
+  width: auto;
+  height: auto;
+  perspective: 1000px;
+}
+.flip-card-inner {
     display: grid;
     grid-template-columns: 300px;
     grid-template-rows: 210px 210px 80px;
@@ -74,6 +79,7 @@ body {
   }
 
   .card:hover {
+    transform: rotateY(180deg);
     transform: scale(1.15);
     box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
   }

@@ -73,6 +73,23 @@
         }
     </script>
 
+<script>
+    document.addEventListener('DOMContentLoaded', function(event) {
+
+document.getElementById('flip-card-btn-turn-to-back').style.visibility = 'visible';
+document.getElementById('flip-card-btn-turn-to-front').style.visibility = 'visible';
+
+document.getElementById('flip-card-btn-turn-to-back').onclick = function() {
+document.getElementById('card').classList.toggle('do-flip');
+};
+
+document.getElementById('flip-card-btn-turn-to-front').onclick = function() {
+document.getElementById('card').classList.toggle('do-flip');
+};
+
+});
+  </script>
+
     <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="index.html" style="font-weight: bold;">
             <img src="./img/kalap.jpg" alt="Hat">
@@ -120,85 +137,92 @@
     <div class="container-fluid mt-4">
         <div class="row justify-content-center">
             <div class="col-auto mb-3">
-                <div class="card" style="width: 25rem;">
-                    <img src="./img/szimplaKajak.jpg" class="card-img-top" alt="backgroundGreen">
+                <div class="cardGift" style="display:flex; justify-content:center; align-items:center;">
+                    <img src="./img/Kajak.jpg" class="card-img-top" style="max-width: 40rem;" alt="backgroundGreen">
                     <div class="card-body">
-                        <h5 class="card-title">Egy személyes kajak</h5>
-                        <p class="card-text">8 drb egy szeméyes kajak 30 lej/óra, 20 lej/fél óra</p>
-                        <a href="#Galéria" class="btn btn-primary">Galéria</a>
-                    </div>
-
-                    <!--        <table>
-            <tr>
-                <td>Kajak</td>
-                <td>30 lej / fő</td>
-            </tr>
-            <tr>
-                <td>Kenu</td>
-                <td>25 lej / fő</td>
-            </tr>
-            <tr>
-                <td>Csónak</td>
-                <td>120 lej / nap</td>
-            </tr>
-            <tr>
-                <td>Felfújhatós szörf bigyusz</td>
-                <td>30 lej / fő</td>
-            </tr>
-        </table>    -->
-                </div>
-            </div>
-
-            <div class="col-auto mb-3">
-                <div class="card" style="max-width: 25rem;">
-                    <img src="./img/duplaKajak.jpg" class="card-img-top" alt="backgroundGreen">
-                    <div class="card-body">
-                        <h5 class="card-title">Két személyes kajak</h5>
-                        <p class="card-text">2 drb két személyes kajak 50 lej/óra 30 lej/fél óra</p>
+                        <h2 class="card-title">Egy személyes kajak</h2>
+                        <h4 class="card-text">30 lej/óra, 20 lej/fél óra</h4>
+                        <h4 class="card-text">A kajakok többsége teljesen kezdőknek is ideális , mivel a formájukból adódóan nagyon stabilak és biztonságosak. Viszont van olyan kajak is, ami kicsivel több tudást igényel , ezek kevésbé stabilak de gyorsabban lehet haladni velük , ezeket inkább azoknak ajánlanám akik már rendelkeznek némi tapasztalattal  . Ha igazán kényelmesen szeretnéd érezni magad a vizen akkor válaszd a kényelmes üléssel felszerelt kajakjainkat.</h4>
                         <a href="#Galéria" class="btn btn-primary">Galéria</a>
                     </div>
                 </div>
             </div>
-
+        </div>
+    </div>
+   
+    <div class="container-fluid mt-4">
+        <div class="row justify-content-center">
             <div class="col-auto mb-3">
-                <div class="card" style="max-width: 25rem;">
-                    <img src="./img/felfujhatosSzorfdeszka.jpg" class="card-img-top" alt="backgroundGreen">
+                <div class="cardGift" style="display:flex; justify-content:center; align-items:center;">
+                    <img src="./img/Kajak 2 szemely.jpg" class="card-img-top" style="max-width: 40rem;" alt="backgroundGreen">
                     <div class="card-body">
-                        <h5 class="card-title">Eveződeszka</h5>
-                        <p class="card-text">6 drb Sup (eveződeszka) 30 lej/óra 20 lej/fél óra</p>
+                        <h2 class="card-title">Két személyes kajak</h2>
+                        <h4 class="card-text">50 lej/óra 30 lej/fél óra</h4>
+                        <h4 class="card-text">Párosan szép az élet! Azok számára akik félnek így első neki futamodásra , vagy csak párban , vagy akár gyerekükkel szeretnének menni , vannak dupla kajakok is , ezekben a kajakokban szintén vannak ülések.</h4>
                         <a href="#Galéria" class="btn btn-primary">Galéria</a>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
 
+    <div class="container-fluid mt-4">
+        <div class="row justify-content-center">
             <div class="col-auto mb-3">
-                <div class="card2" style="max-width: 25rem;">
-                    <img src="./img/kenu.jpg" class="card-img-top" alt="backgroundGreen">
+                <div class="cardGift" style="display:flex; justify-content:center; align-items:center;">
+                    <img src="./img/Sup.jpg" class="card-img-top" style="max-width: 40rem;" alt="backgroundGreen">
                     <div class="card-body">
-                        <h5 class="card-title">Kenu</h5>
-                        <p class="card-text">6 drb kenu (4 személyes) 100 lej/óra, 50 lej/fél óra</p>
+                        <h2 class="card-title">Eveződeszka</h2>
+                        <h4 class="card-text">30 lej/óra 20 lej/fél óra</h4>
+                        <h4 class="card-text">Az evező deszka (SUP) használata mindössze néhány perc alatt elsajátítható , mindössze némi egyensúlyérzékre és bátorságra  van szükség. A legnehezebb rész talán  a deszkán való felállás , azonban némi gyakorlás után gördülékenyebben megy ,  akik bátortalanabbak akár ülve, vagy térdelve is hajthatják deszkájukat. A supok nagyrészt egy személyesek , viszont a nagyobbakkal akár ketten is lehet menni. És ezzel szinte minden adott is egy élménydús SUP-oláshoz – már csak megfelelő látnivalót és útitársakat kell keresni.  Mi ezt most mind biztosítjuk , ha velünk tartanak.</h4>
                         <a href="#Galéria" class="btn btn-primary">Galéria</a>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
 
+    <div class="container-fluid mt-4">
+        <div class="row justify-content-center">
             <div class="col-auto mb-3">
-                <div class="card2" style="max-width: 25rem;">
-                    <img src="./img/IMG_20200614_130459.jpg" class="card-img-top" alt="backgroundGreen">
+                <div class="cardGift" style="display:flex; justify-content:center; align-items:center;">
+                    <img src="./img/Kenuk.jpg" class="card-img-top" style="max-width: 40rem;" alt="backgroundGreen">
                     <div class="card-body">
-                        <h5 class="card-title">Csónak</h5>
-                        <p class="card-text">2 drb csónak(3-5 szeméyes) 3 főig 80 lej/óra, 3 fő fölött 100 lej/óra, fél óra 40-50 lej</p>
+                        <h2 class="card-title">Kenu</h2>
+                        <h4 class="card-text">100 lej/óra, 50 lej/fél óra</h4>
+                        <h4 class="card-text">Azok számára akik szeretnek csapatban dolgozni a kenu a legideálisabb , ezek  négy személyesek. A kenuzás jobban összehozza az embereket, mivel itt csapatmunka szükséges. Amikor mind a négy személy szinkronba evez annak megvan a maga szépsége és az eredménye is. A kenuzás akár egy család számára is megfelelő. </h4>
                         <a href="#Galéria" class="btn btn-primary">Galéria</a>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
 
+    <div class="container-fluid mt-4">
+        <div class="row justify-content-center">
             <div class="col-auto mb-3">
-                <div class="card2" style="max-width: 25rem;">
-                    <img src="./img/IMG_20200713_163309.jpg" class="card-img-top" alt="backgroundGreen">
+                <div class="cardGift" style="display:flex; justify-content:center; align-items:center;">
+                    <img src="./img/Csonakk.jpg" class="card-img-top" style="max-width: 40rem;" alt="backgroundGreen">
                     <div class="card-body">
-                        <h5 class="card-title">Vizibicikli</h5>
-                        <p class="card-text">1 drb vizibicikli (max 5 személyes) 3 főig 80 lej/óra, 3 fő fölött 100 lej/óra, fél óra 40-50 lej</p>
+                        <h2 class="card-title">Csónak</h2>
+                        <h4 class="card-text">80 lej/óra, 3 fő fölött 100 lej/óra, fél óra 40-50 lej</h4>
+                        <h4 class="card-text">A csónak szintén 4 személyes( 1 evez) ,  a vizibiciklihez hasonlóan , ez is nagy , és nagyon biztonságos , nagyon ideális a gyermekes családok számára. </h4>
+                        <a href="#Galéria" class="btn btn-primary">Galéria</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid mt-4">
+        <div class="row justify-content-center">
+            <div class="col-auto mb-3">
+                <div class="cardGift" style="display:flex; justify-content:center; align-items:center;">
+                    <img src="./img/Vizibicikli.jpg" class="card-img-top" style="max-width: 40rem;" alt="backgroundGreen">
+                    <div class="card-body">
+                        <h2 class="card-title">Vizibicikli</h2>
+                        <h4 class="card-text">80 lej/óra, 3 fő fölött 100 lej/óra, fél óra 40-50 lej</h4>
+                        <h4 class="card-text">A vízibicikli 4 személyes ,( ebből 2 ember teker) a termetéből adódóan a lehető legbiztonságosabb jármű. Erről lehet ugrálni vagy akár napozni , a  hátul levő nagy térből adódóan. Itt nagyobb a hely , tehát nagyobb dolgot is magával vihet az ember .</h4>
                         <a href="#Galéria" class="btn btn-primary">Galéria</a>
                     </div>
                 </div>
@@ -249,7 +273,7 @@
 
         <div class="row justify-content-center">
             <a target="blank" href="https://goo.gl/maps/cqMkc2nqvvEwzcBWA">
-                <img src="./img/map.jpg" alt="Zöldkalap-Location" class="center">
+                <img src="./img/Terkepp.png" alt="Zöldkalap-Location" class="center">
             </a>
         </div>
 
@@ -273,7 +297,7 @@
 
             <div class="mySlides">
                 <div class="numbertext">4 / 20</div>
-                <img src="./img/IMG_20200614_130501.jpg" style="width:100%">
+                <img src="./img/IMG_20200614_130459.jpg" style="width:100%">
             </div>
 
             <div class="mySlides">
@@ -333,7 +357,7 @@
                         alt="Mountains and fjords">
                 </div>
                 <div class="column">
-                    <img class="demo cursor" src="./img/IMG_20200614_130501.jpg" style="width:100%" onclick="currentSlide(4)"
+                    <img class="demo cursor" src="./img/IMG_20200614_130459.jpg" style="width:100%" onclick="currentSlide(4)"
                         alt="Northern Lights">
                 </div>
                 <div class="column">
@@ -402,7 +426,7 @@
             }
         </script>
 
-        <h1 id="Ajándékok">Ajándék</h1>
+        <h1 id="Ajándékok" style="margin-top: 50px; margin-bottom: 20px;">Ajándék</h1>
 
         <div class="container-fluid mt-4">
             <div class="row justify-content-center">
@@ -411,8 +435,8 @@
                         <img src="./img/gift.jpg" class="card-img-top" style="max-width: 40rem;" alt="backgroundGreen">
                         <div class="card-body">
                             <h2 class="card-title">Ajándékutalvány</h2>
-                            <h4 class="card-text">Ajándékozz egy felejthetetlen élményt szeretteidnek,</h4>
-                            <h4 class="card-text"> barátaidnak személyreszólóan, igény szerint!</h4>
+                            <h4 class="card-text">Ajándékozz egy felejthetetlen élményt szeretteidnek, barátaidnak személyreszólóan, igény szerint!</h4>
+                            
                         </div>
                     </div>
                 </div>

@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zöldkalap</title>
+    <link rel="stylesheet" href="./lib/bootstrap-4.5.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+    <script>
+        $(function () {
+            $(document).click(function (event) {
+                $('.navbar-collapse').collapse('hide');
+            });
+        });
+    </script>
+
+    <script>history.scrollRestoration = "manual";
+
+        $(window).on('beforeunload', function () {
+            $(window).Top(0);
+        });</script>
+
+    <script>
+        jQuery('body').css('display', 'none');
+        jQuery(document).ready(function () {
+            jQuery('body').fadeIn(1700);
+        });
+        setTimeout(function () {
+            jQuery('body').fadeIn();
+        }, 5000)
+    </script>
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            var captionText = document.getElementById("caption");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            captionText.innerHTML = dots[slideIndex - 1].alt;
+        }
+    </script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function(event) {
+
+document.getElementById('flip-card-btn-turn-to-back').style.visibility = 'visible';
+document.getElementById('flip-card-btn-turn-to-front').style.visibility = 'visible';
+
+document.getElementById('flip-card-btn-turn-to-back').onclick = function() {
+document.getElementById('card').classList.toggle('do-flip');
+};
+
+document.getElementById('flip-card-btn-turn-to-front').onclick = function() {
+document.getElementById('card').classList.toggle('do-flip');
+};
+
+});
+  </script>
+
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html" style="font-weight: bold;">
+            <img src="./img/kalap.jpg" alt="Hat">
+            Zöld kalap
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+                    <a class="nav-link" href="#Áraink" style="font-weight: bolder;">Bérelhető</a>
+                </li>
+                <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+                    <a class="nav-link" href="#Elérhetőségeink/Helyszín"
+                        style="font-weight: bolder;">Kapcsolat</a>
+                </li>
+                <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+                    <a class="nav-link" href="#Galéria" style="font-weight: bolder;">Galéria</a>
+                </li>
+                <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+                    <a class="nav-link" href="#Ajándékok" style="font-weight: bolder;">Ajándék</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="bg"></div>
+
+
+
+
+    <!-- <div class="container">
+        <div class="bottom-left"></div>
+        <div class="top-left"></div>
+        <div class="top-right"></div>
+        <div class="bottom-right"></div>
+        <div class="centered"></div>
+    </div>-->
+
+    <h1 id="Áraink">Bérelhető</h1>
+
+    <div class="container-fluid mt-4">
+        <div class="row justify-content-center">
+            <div class="col-auto mb-3">
+                <div id="card" class="card" style="width: 25rem;">
+                    
+                    <div class="front">
+                    <img src="./img/Kajak.jpg" class="card-img-top" alt="backgroundGreen">
+                    <div class="card-body">
+                        <h5 class="card-title">Egy személyes kajak</h5>
+                        <p class="card-text">30 lej/óra, 20 lej/fél óra</p>
+                        
+
+                            <div class="flip-card-front">
+
+                                <a href="#Galéria" class="btn btn-primary">Galéria</a>
+                                <button id="flip-card-btn-turn-to-back" class="btn btn-primary">Bovebben</button>
+                    </div>
+                        
+                    </div>
+                </div>
+                <div id="back" class="back">
+                <br />
+                <h4>Egy személyes kajak</h4>
+                <br /> 
+                <h5>A kajakok többsége teljesen kezdőknek is ideális , mivel a formájukból adódóan nagyon stabilak és biztonságosak. Viszont van olyan kajak is, ami kicsivel több tudást igényel , ezek kevésbé stabilak de gyorsabban lehet haladni velük , ezeket inkább azoknak ajánlanám akik már rendelkeznek némi tapasztalattal  . Ha igazán kényelmesen szeretnéd érezni magad a vizen akkor válaszd a kényelmes üléssel felszerelt kajakjainkat.</h5>
+                <div class="flip-card-back"><button id="flip-card-btn-turn-to-front" class="btn btn-primary">Vissza</button></div>
+            </div>
+                
+            
+
+                    <!--        <table>
+            <tr>
+                <td>Kajak</td>
+                <td>30 lej / fő</td>
+            </tr>
+            <tr>
+                <td>Kenu</td>
+                <td>25 lej / fő</td>
+            </tr>
+            <tr>
+                <td>Csónak</td>
+                <td>120 lej / nap</td>
+            </tr>
+            <tr>
+                <td>Felfújhatós szörf bigyusz</td>
+                <td>30 lej / fő</td>
+            </tr>
+        </table>    -->
+                </div>
+            </div>
+
+            <div class="col-auto mb-3">
+                <div class="card" style="max-width: 25rem;">
+                    <img src="./img/Kajak 2 szemely.jpg" class="card-img-top" alt="backgroundGreen">
+                    <div class="card-body">
+                        <h5 class="card-title">Két személyes kajak</h5>
+                        <p class="card-text">50 lej/óra 30 lej/fél óra</p>
+                        <a href="#Galéria" class="btn btn-primary">Galéria</a>
+                        <a href="" class="btn btn-primary">Bővebben</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-auto mb-3">
+                <div class="card" style="max-width: 25rem;">
+                    <img src="./img/Sup.jpg" class="card-img-top" alt="backgroundGreen">
+                    <div class="card-body">
+                        <h5 class="card-title">Eveződeszka</h5>
+                        <p class="card-text">30 lej/óra 20 lej/fél óra</p>
+                        <a href="#Galéria" class="btn btn-primary">Galéria</a>
+                        <a href="" class="btn btn-primary">Bővebben</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-auto mb-3">
+                <div class="card2" style="max-width: 25rem;">
+                    <img src="./img/Kenuk.jpg" class="card-img-top" alt="backgroundGreen">
+                    <div class="card-body">
+                        <h5 class="card-title">Kenu</h5>
+                        <p class="card-text">100 lej/óra, 50 lej/fél óra</p>
+                        <a href="#Galéria" class="btn btn-primary">Galéria</a>
+                        <a href="" class="btn btn-primary">Bővebben</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-auto mb-3">
+                <div class="card2" style="max-width: 25rem;">
+                    <img src="./img/Csonakk.jpg" class="card-img-top" alt="backgroundGreen">
+                    <div class="card-body">
+                        <h5 class="card-title">Csónak</h5>
+                        <p class="card-text">80 lej/óra, 3 fő fölött 100 lej/óra, fél óra 40-50 lej</p>
+                        <a href="#Galéria" class="btn btn-primary">Galéria</a>
+                        <a href="" class="btn btn-primary">Bővebben</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-auto mb-3">
+                <div class="card2" style="max-width: 25rem;">
+                    <img src="./img/Vizibicikli.jpg" class="card-img-top" alt="backgroundGreen">
+                    <div class="card-body">
+                        <h5 class="card-title">Vizibicikli</h5>
+                        <p class="card-text">80 lej/óra, 3 fő fölött 100 lej/óra, fél óra 40-50 lej</p>
+                        <a href="#Galéria" class="btn btn-primary">Galéria</a>
+                        <a href="" class="btn btn-primary">Bővebben</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div>
+        <h1 id="Elérhetőségeink/Helyszín" style="margin-top: 50px; margin-bottom: 20px;">
+            Kapcsolat</h1>
+
+
+        <h3>Legyen egy felejthetetlen élménybe részed. Mindazoknak akik aktiv kikapcsolodásra vágynak egy csodás környezetben.</h3>
+        <h3>Kajakozhatsz és kenuzhatsz a Zetelaki víztározón. Tel. : 0753772924 Email : zoldkalap.kajak@gmail.com</h3>
+
+        <table class="center">
+            <caption
+                style="caption-side:top; text-align:center; color: rgb(99, 188, 80); font-weight: bolder; font-size: xx-large;">
+                Nyitvatartás</caption>
+            <thead>
+                <tr>
+                    <th style="padding-bottom: 15px; text-align: center; background-color: white;">Nap</th>
+                    <th style="padding-bottom: 15px; text-align: center; background-color: white;">Nyitás</th>
+                    <th style="padding-bottom: 15px; text-align: center; background-color: white;">Zárás</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Hétfő - Péntek</td>
+                    <td>12:00 óra</td>
+                    <td>20:00 óra</td>
+                </tr>
+                <tr>
+                    <td>Szombat</td>
+                    <td>12:00 óra</td>
+                    <td>20:00 óra</td>
+                </tr>
+                <tr>
+                    <td>Vasárnap</td>
+                    <td>12:00 óra</td>
+                    <td>20:00 óra</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3 style="margin-bottom: 20px ;">Megtalálsz minket itt:</h3>
+
+        <div class="row justify-content-center">
+            <a target="blank" href="https://goo.gl/maps/cqMkc2nqvvEwzcBWA">
+                <img src="./img/Terkepuj.png" alt="Zöldkalap-Location" class="center">
+            </a>
+        </div>
+
+        <h1 id="Galéria" style=" margin-bottom: 50px; margin-top: 50px;">Galéria</h1>
+
+        <div class="container">
+            <div class="mySlides">
+                <div class="numbertext">1 / 20</div>
+                <img src="./img/IMG_20200619_165836.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">2 / 20</div>
+                <img src="./img/IMG_20200606_174811.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">3 / 20</div>
+                <img src="./img/IMG_20200713_163917.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">4 / 20</div>
+                <img src="./img/Csonakk.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">5 / 20</div>
+                <img src="./img/IMG_20200702_172124_1.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">6 / 20</div>
+                <img src="./img/IMG_20200705_203833.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">7 / 20</div>
+                <img src="./img/IMG_20200708_190615.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">8 / 20</div>
+                <img src="./img/IMG_20200708_190706_1.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">9 / 20</div>
+                <img src="./img/IMG_20200708_193743.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">10 / 20</div>
+                <img src="./img/IMG_20200710_151220_1.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">11 / 20</div>
+                <img src="./img/IMG_20200710_195900.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">12/ 20</div>
+                <img src="./img/IMG_20200713_163309.jpg" style="width:100%">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+            <div class="row">
+                <div class="column">
+                    <img class="demo cursor" src="./img/IMG_20200619_165836.jpg" style="width:100%" onclick="currentSlide(1)"
+                        alt="The Woods">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="./img/IMG_20200606_174811.jpg" style="width:100%" onclick="currentSlide(2)"
+                        alt="Cinque Terre">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="./img/IMG_20200713_163917.jpg" style="width:100%" onclick="currentSlide(3)"
+                        alt="Mountains and fjords">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="./img/Csonakk.jpg" style="width:100%" onclick="currentSlide(4)"
+                        alt="Northern Lights">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="./img/IMG_20200702_172124_1.jpg" style="width:100%" onclick="currentSlide(5)"
+                        alt="Nature and sunrise">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="./img/IMG_20200705_203833.jpg" style="width:100%" onclick="currentSlide(6)"
+                        alt="Snowy Mountains">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="./img/IMG_20200708_190615.jpg" style="width:100%" onclick="currentSlide(7)"
+                        alt="Snowy Mountains">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="./img/IMG_20200708_190706_1.jpg" style="width:100%" onclick="currentSlide(8)"
+                        alt="Snowy Mountains">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="./img/IMG_20200708_193743.jpg" style="width:100%" onclick="currentSlide(9)"
+                        alt="Snowy Mountains">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="./img/IMG_20200710_151220_1.jpg" style="width:100%" onclick="currentSlide(10)"
+                        alt="Snowy Mountains">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="./img/IMG_20200710_195900.jpg" style="width:100%" onclick="currentSlide(11)"
+                        alt="Snowy Mountains">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="./img/IMG_20200713_163309.jpg" style="width:100%" onclick="currentSlide(12)"
+                        alt="Snowy Mountains">
+                </div>
+            </div>
+        </div>
+
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("demo");
+                var captionText = document.getElementById("caption");
+                if (n > slides.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = slides.length }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+                captionText.innerHTML = dots[slideIndex - 1].alt;
+            }
+        </script>
+
+        <h1 id="Ajándékok">Ajándék</h1>
+
+        <div class="container-fluid mt-4">
+            <div class="row justify-content-center">
+                <div class="col-auto mb-3">
+                    <div class="cardGift" style="display:flex; justify-content:center; align-items:center;">
+                        <img src="./img/gift.jpg" class="card-img-top" style="max-width: 40rem;" alt="backgroundGreen">
+                        <div class="card-body">
+                            <h2 class="card-title">Ajándékutalvány</h2>
+                            <h4 class="card-text">Ajándékozz egy felejthetetlen élményt szeretteidnek,</h4>
+                            <h4 class="card-text"> barátaidnak személyreszólóan, igény szerint!</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>window.onbeforunload = function () {
+                window.scrollTo(0, 0);
+            };</script>
+</body>
+
+</html>
